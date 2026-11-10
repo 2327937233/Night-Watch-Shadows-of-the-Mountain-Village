@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "left_boundary_stone_base_final"
+albedo_color = Color(0.18, 0.22, 0.23, 1)
+metallic = 0.0
+roughness = 0.58
+cull_mode = 0
+transparency = 0

@@ -1,0 +1,189 @@
+[gd_scene load_steps=2 format=3 uid="uid://watchnight_start_menu"]
+
+[ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_start_menu"]
+
+[node name="StartMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+script = ExtResource("1_start_menu")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="DarkOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.25)
+
+[node name="RainLayer" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 0
+
+[node name="FogLayer" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+modulate = Color(1, 1, 1, 0.42)
+
+[node name="Vignette" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TitleGroup" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 120.0
+offset_top = 70.0
+offset_right = 740.0
+offset_bottom = 465.0
+mouse_filter = 2
+
+[node name="TitleLogo" type="TextureRect" parent="TitleGroup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="GameTitle" type="Label" parent="TitleGroup"]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_right = 340.0
+offset_bottom = 152.0
+mouse_filter = 2
+text = "守夜"
+
+[node name="Subtitle" type="Label" parent="TitleGroup"]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_left = 14.0
+offset_top = 148.0
+offset_right = 360.0
+offset_bottom = 205.0
+mouse_filter = 2
+text = "山村旧影"
+
+[node name="SealText" type="Label" parent="TitleGroup"]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_left = 356.0
+offset_top = 34.0
+offset_right = 418.0
+offset_bottom = 124.0
+mouse_filter = 2
+text = "陈\n默"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MenuGroup" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 710.0
+offset_top = 438.0
+offset_right = 1290.0
+offset_bottom = 790.0
+mouse_filter = 2
+theme_override_constants/separation = 14
+
+[node name="StartButton" type="Button" parent="MenuGroup"]
+layout_mode = 2
+text = "开始游戏"
+flat = true
+
+[node name="ControlsButton" type="Button" parent="MenuGroup"]
+layout_mode = 2
+text = "操作查看"
+flat = true
+
+[node name="RestartButton" type="Button" parent="MenuGroup"]
+layout_mode = 2
+text = "重新开始"
+flat = true
+
+[node name="ExitButton" type="Button" parent="MenuGroup"]
+layout_mode = 2
+text = "退出游戏"
+flat = true
+
+[node name="BottomHint" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = -610.0
+offset_top = -82.0
+offset_right = -50.0
+offset_bottom = -36.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+text = "↑↓ 选择    Enter 确认    Esc 返回"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ControlsPanelInstance" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="AudioBgm" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+
+[node name="AudioHover" type="AudioStreamPlayer" parent="."]
+volume_db = -8.0
+
+[node name="AudioConfirm" type="AudioStreamPlayer" parent="."]
+volume_db = -6.0
+
+[node name="AudioThunder" type="AudioStreamPlayer" parent="."]
+volume_db = -5.0
+
+[node name="ThunderTimer" type="Timer" parent="."]
+one_shot = true

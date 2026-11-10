@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "left_boundary_cap_tiles_wet_final"
+albedo_color = Color(0.075, 0.09, 0.1, 1)
+metallic = 0.0
+roughness = 0.38
+cull_mode = 0
+transparency = 0

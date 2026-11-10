@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=7 format=3]
+
+[ext_resource type="Shader" path="res://shaders/interior_wet_brick.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_base_color_4k.png" id="2_albedo"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_normal_gl_4k.png" id="3_normal"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_roughness_4k.png" id="4_roughness"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_ao_4k.png" id="5_ao"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_wetness_4k.png" id="6_wetness"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_moss_dirt_4k.png" id="7_dirt"]
+
+[resource]
+shader = ExtResource("1_shader")
+shader_parameter/tile_repeat = Vector2(0.92, 0.82)
+shader_parameter/brick_tint = Color(0.48, 0.53, 0.55, 1)
+shader_parameter/damp_tint = Color(0.15, 0.20, 0.21, 1)
+shader_parameter/albedo_gain = 0.92
+shader_parameter/normal_strength = 0.72
+shader_parameter/wetness_amount = 0.48
+shader_parameter/side_dampness = 0.38
+shader_parameter/albedo_texture = ExtResource("2_albedo")
+shader_parameter/normal_texture = ExtResource("3_normal")
+shader_parameter/roughness_texture = ExtResource("4_roughness")
+shader_parameter/ao_texture = ExtResource("5_ao")
+shader_parameter/wetness_texture = ExtResource("6_wetness")
+shader_parameter/moss_dirt_texture = ExtResource("7_dirt")

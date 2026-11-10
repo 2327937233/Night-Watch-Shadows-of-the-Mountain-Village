@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/main_hall_pillar_encounter.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/encounters/YuelanBackFigure.tscn" id="2"]
+
+[node name="SoundGuidedLeftColumnEncounter" type="Node3D"]
+script = ExtResource("1")
+figure_scene = ExtResource("2")

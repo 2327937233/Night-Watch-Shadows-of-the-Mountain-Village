@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://watchnight_controls_panel"]
+
+[ext_resource type="Script" path="res://scripts/controls_panel.gd" id="1_controls_panel"]
+
+[node name="ControlsPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+script = ExtResource("1_controls_panel")
+
+[node name="BackgroundDim" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+color = Color(0, 0, 0, 0.62)
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -410.0
+offset_top = -270.0
+offset_right = 410.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "操作查看"
+horizontal_alignment = 1
+
+[node name="ControlText" type="RichTextLabel" parent="Panel/VBoxContainer"]
+layout_mode = 2
+bbcode_enabled = false
+text = "W / A / S / D ：移动角色\n鼠标 ：选择菜单 / 调查物品\nE ：调查 / 互动\nF ：打开或关闭手电筒\nTab ：查看背包\nEsc ：返回 / 关闭界面"
+fit_content = true
+scroll_active = false
+
+[node name="ReturnHint" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "按 Esc 返回"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="416" viewBox="0 0 640 416">
+ <defs><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#927f5d"/><stop offset="1" stop-color="#5b513f"/></linearGradient><filter id="age"><feGaussianBlur stdDeviation="1.5"/></filter></defs>
+ <rect width="640" height="416" fill="#554a36"/>
+ <path d="M12 8 633 18l-9 385L8 392z" fill="url(#paper)" stroke="#342d22" stroke-width="8"/>
+ <g fill="#3e3c32" opacity=".69" filter="url(#age)">
+  <path d="M87 321q9-122 75-138 57 20 70 138zm166 0q8-117 72-145 73 35 79 145zm163 0q18-118 87-142 58 18 65 142z"/>
+  <ellipse cx="161" cy="138" rx="39" ry="51"/><ellipse cx="328" cy="133" rx="38" ry="49"/><ellipse cx="504" cy="135" rx="38" ry="49"/>
+ </g>
+ <g fill="none" stroke="#beb396" stroke-linecap="round" opacity=".84">
+  <path d="m278 70 82 28-74 36 85 28-94 33 81 36-88 32 91 24-73 52" stroke-width="18"/>
+  <path d="m284 92 68 27-58 28 63 22-72 38 63 20-71 27 72 22-63 25" stroke-width="8"/>
+ </g>
+ <path d="m379 276 33-25 44 1" fill="none" stroke="#a69b7b" stroke-width="5" opacity=".67"/>
+ <circle cx="413" cy="251" r="8" fill="#aaa187" opacity=".56"/>
+ <g fill="#29291f" opacity=".19"><circle cx="40" cy="30" r="31"/><circle cx="609" cy="364" r="45"/><path d="M17 346q77-33 154 35H11z"/></g>
+ <path d="M35 55q96-29 198-5m213 3q81-24 159 2M60 370q74-8 115 16m348-19q49-19 79-7" fill="none" stroke="#2e2d25" stroke-width="6" opacity=".25"/>
+</svg>

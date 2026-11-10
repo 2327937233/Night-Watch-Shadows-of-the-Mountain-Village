@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "left_boundary_dark_interior_final"
+albedo_color = Color(0.025, 0.028, 0.028, 1)
+metallic = 0.0
+roughness = 0.88
+cull_mode = 0
+transparency = 0

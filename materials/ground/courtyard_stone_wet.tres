@@ -1,0 +1,38 @@
+[gd_resource type="ShaderMaterial" load_steps=10 format=3]
+
+[ext_resource type="Shader" path="res://shaders/courtyard_stone_pbr.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_base_color_4k.png" id="2_albedo"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_normal_gl_4k.png" id="3_normal"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_roughness_4k.png" id="4_roughness"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_ao_4k.png" id="5_ao"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_height_4k.png" id="6_height"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_wetness_4k.png" id="7_wetness"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_puddle_4k.png" id="8_puddle"]
+[ext_resource type="Texture2D" path="res://assets/materials/ground/courtyard_stone_moss_dirt_4k.png" id="9_moss"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_shader")
+shader_parameter/tile_repeat = Vector2(3.6, 11)
+shader_parameter/stone_tint = Color(0.86, 0.92, 0.98, 1)
+shader_parameter/moss_tint = Color(0.18, 0.23, 0.17, 1)
+shader_parameter/dirt_tint = Color(0.19, 0.15, 0.12, 1)
+shader_parameter/albedo_gain = 1.24
+shader_parameter/normal_strength = 0.82
+shader_parameter/height_scale = 0.028
+shader_parameter/wetness_amount = 0.82
+shader_parameter/puddle_amount = 0.72
+shader_parameter/moss_dirt_amount = 0.36
+shader_parameter/dry_roughness_floor = 0.58
+shader_parameter/wet_roughness = 0.31
+shader_parameter/puddle_roughness = 0.11
+shader_parameter/puddle_threshold = 0.16
+shader_parameter/color_variation = 0.075
+shader_parameter/albedo_texture = ExtResource("2_albedo")
+shader_parameter/normal_texture = ExtResource("3_normal")
+shader_parameter/roughness_texture = ExtResource("4_roughness")
+shader_parameter/ao_texture = ExtResource("5_ao")
+shader_parameter/height_texture = ExtResource("6_height")
+shader_parameter/wetness_texture = ExtResource("7_wetness")
+shader_parameter/puddle_texture = ExtResource("8_puddle")
+shader_parameter/moss_dirt_texture = ExtResource("9_moss")

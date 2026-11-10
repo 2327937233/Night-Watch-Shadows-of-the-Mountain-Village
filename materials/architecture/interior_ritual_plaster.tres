@@ -1,0 +1,33 @@
+[gd_resource type="ShaderMaterial" load_steps=10 format=3]
+
+[ext_resource type="Shader" path="res://shaders/interior_plaster_world.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/materials/architecture/peeling_plaster_base_color_4k.png" id="2_albedo"]
+[ext_resource type="Texture2D" path="res://assets/materials/architecture/peeling_plaster_normal_gl_4k.png" id="3_normal"]
+[ext_resource type="Texture2D" path="res://assets/materials/architecture/peeling_plaster_roughness_4k.png" id="4_roughness"]
+[ext_resource type="Texture2D" path="res://assets/materials/architecture/peeling_plaster_ao_4k.png" id="5_ao"]
+[ext_resource type="Texture2D" path="res://assets/materials/architecture/peeling_plaster_height_4k.png" id="6_height"]
+[ext_resource type="Texture2D" path="res://assets/materials/architecture/peeling_plaster_wetness_4k.png" id="7_wetness"]
+[ext_resource type="Texture2D" path="res://assets/materials/architecture/peeling_plaster_moss_dirt_4k.png" id="8_moss"]
+[ext_resource type="Texture2D" path="res://assets/materials/architecture/haunted_plaster_weathering_overlay_v1.png" id="9_weathering"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_shader")
+shader_parameter/world_tile_scale = Vector2(0.43, 0.52)
+shader_parameter/plaster_tint = Color(0.57, 0.565, 0.52, 1)
+shader_parameter/damp_tint = Color(0.105, 0.125, 0.115, 1)
+shader_parameter/albedo_gain = 0.96
+shader_parameter/normal_strength = 0.38
+shader_parameter/weathering_strength = 0.62
+shader_parameter/root_dampness = 0.72
+shader_parameter/streak_strength = 0.46
+shader_parameter/wet_roughness = 0.42
+shader_parameter/dry_roughness_floor = 0.72
+shader_parameter/albedo_texture = ExtResource("2_albedo")
+shader_parameter/normal_texture = ExtResource("3_normal")
+shader_parameter/roughness_texture = ExtResource("4_roughness")
+shader_parameter/ao_texture = ExtResource("5_ao")
+shader_parameter/height_texture = ExtResource("6_height")
+shader_parameter/wetness_texture = ExtResource("7_wetness")
+shader_parameter/moss_dirt_texture = ExtResource("8_moss")
+shader_parameter/weathering_overlay = ExtResource("9_weathering")

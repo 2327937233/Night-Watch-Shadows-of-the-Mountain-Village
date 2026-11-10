@@ -1,0 +1,255 @@
+[gd_scene load_steps=2 format=3 uid="uid://watchnight_exterior_hud"]
+
+[ext_resource type="Script" path="res://scripts/exterior_hud.gd" id="1_hud"]
+
+[node name="ExteriorHUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_hud")
+
+[node name="TopStatus" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 36.0
+offset_top = 26.0
+offset_right = 330.0
+offset_bottom = 160.0
+mouse_filter = 2
+
+[node name="TimeLabel" type="Label" parent="TopStatus"]
+layout_mode = 1
+offset_left = 14.0
+offset_right = 112.0
+offset_bottom = 32.0
+text = "22:00"
+
+[node name="DawnHint" type="Label" parent="TopStatus"]
+visible = false
+layout_mode = 1
+offset_left = 96.0
+offset_top = 2.0
+offset_right = 296.0
+offset_bottom = 34.0
+mouse_filter = 2
+text = "须在六点前离开"
+
+[node name="StatusIcon" type="TextureRect" parent="TopStatus"]
+layout_mode = 1
+offset_left = 0.0
+offset_top = 48.0
+offset_right = 82.0
+offset_bottom = 130.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HealthBack" type="ColorRect" parent="TopStatus"]
+layout_mode = 1
+offset_left = 96.0
+offset_top = 72.0
+offset_right = 286.0
+offset_bottom = 86.0
+mouse_filter = 2
+color = Color(0.09, 0.03, 0.025, 0.72)
+
+[node name="HealthBar" type="ColorRect" parent="TopStatus"]
+layout_mode = 1
+offset_left = 98.0
+offset_top = 74.0
+offset_right = 284.0
+offset_bottom = 84.0
+mouse_filter = 2
+color = Color(0.68, 0.05, 0.055, 0.94)
+
+[node name="SpiritBack" type="ColorRect" parent="TopStatus"]
+layout_mode = 1
+offset_left = 96.0
+offset_top = 94.0
+offset_right = 214.0
+offset_bottom = 102.0
+mouse_filter = 2
+color = Color(0.02, 0.06, 0.04, 0.72)
+
+[node name="SpiritBar" type="ColorRect" parent="TopStatus"]
+layout_mode = 1
+offset_left = 98.0
+offset_top = 96.0
+offset_right = 182.0
+offset_bottom = 100.0
+mouse_filter = 2
+color = Color(0.0, 0.55, 0.29, 0.9)
+
+[node name="PulseLine" type="Label" parent="TopStatus"]
+layout_mode = 1
+offset_left = 98.0
+offset_top = 108.0
+offset_right = 180.0
+offset_bottom = 135.0
+text = "╲╱╲─"
+
+[node name="ObjectiveGroup" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 1470.0
+offset_top = 72.0
+offset_right = 1800.0
+offset_bottom = 128.0
+mouse_filter = 2
+
+[node name="ObjectiveGlow" type="ColorRect" parent="ObjectiveGroup"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ObjectiveDiamond" type="Label" parent="ObjectiveGroup"]
+layout_mode = 1
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 42.0
+offset_bottom = 48.0
+text = "◇"
+horizontal_alignment = 1
+
+[node name="ObjectiveLabel" type="Label" parent="ObjectiveGroup"]
+layout_mode = 1
+offset_left = 54.0
+offset_top = 8.0
+offset_right = 260.0
+offset_bottom = 48.0
+text = "进入荒宅"
+
+[node name="QuickSlots" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 40.0
+offset_top = 795.0
+offset_right = 310.0
+offset_bottom = 934.0
+mouse_filter = 2
+
+[node name="FlashlightFrame" type="Panel" parent="QuickSlots"]
+layout_mode = 1
+offset_right = 78.0
+offset_bottom = 78.0
+mouse_filter = 2
+
+[node name="FlashlightIcon" type="TextureRect" parent="QuickSlots"]
+layout_mode = 1
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 72.0
+offset_bottom = 72.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FlashlightKey" type="Label" parent="QuickSlots"]
+layout_mode = 1
+offset_left = 24.0
+offset_top = 84.0
+offset_right = 58.0
+offset_bottom = 116.0
+text = "F"
+horizontal_alignment = 1
+
+[node name="BagFrame" type="Panel" parent="QuickSlots"]
+layout_mode = 1
+offset_left = 92.0
+offset_right = 170.0
+offset_bottom = 78.0
+mouse_filter = 2
+
+[node name="BagIcon" type="TextureRect" parent="QuickSlots"]
+layout_mode = 1
+offset_left = 98.0
+offset_top = 6.0
+offset_right = 164.0
+offset_bottom = 72.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BagKey" type="Label" parent="QuickSlots"]
+layout_mode = 1
+offset_left = 102.0
+offset_top = 84.0
+offset_right = 160.0
+offset_bottom = 116.0
+text = "Tab"
+horizontal_alignment = 1
+
+[node name="BackFrame" type="Panel" parent="QuickSlots"]
+layout_mode = 1
+offset_left = 184.0
+offset_right = 262.0
+offset_bottom = 78.0
+mouse_filter = 2
+
+[node name="BackIcon" type="TextureRect" parent="QuickSlots"]
+layout_mode = 1
+offset_left = 190.0
+offset_top = 6.0
+offset_right = 256.0
+offset_bottom = 72.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BackKey" type="Label" parent="QuickSlots"]
+layout_mode = 1
+offset_left = 184.0
+offset_top = 84.0
+offset_right = 262.0
+offset_bottom = 116.0
+text = "ESC"
+horizontal_alignment = 1
+
+[node name="DoorPrompt" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_left = 854.0
+offset_top = 476.0
+offset_right = 1070.0
+offset_bottom = 526.0
+mouse_filter = 2
+
+[node name="PromptBack" type="ColorRect" parent="DoorPrompt"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="KeyBox" type="Label" parent="DoorPrompt"]
+layout_mode = 1
+offset_left = 0.0
+offset_top = 8.0
+offset_right = 36.0
+offset_bottom = 42.0
+text = "E"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PromptText" type="Label" parent="DoorPrompt"]
+layout_mode = 1
+offset_left = 48.0
+offset_top = 8.0
+offset_right = 210.0
+offset_bottom = 42.0
+text = "推门进入"

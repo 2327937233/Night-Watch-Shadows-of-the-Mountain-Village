@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "left_boundary_plaster_wet_final"
+albedo_color = Color(0.34, 0.335, 0.305, 1)
+metallic = 0.0
+roughness = 0.76
+cull_mode = 0
+transparency = 0

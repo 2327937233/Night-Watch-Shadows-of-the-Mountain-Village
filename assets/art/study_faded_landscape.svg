@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="540" viewBox="0 0 1024 540">
+  <defs>
+    <linearGradient id="old-paper" x2="0" y2="1"><stop stop-color="#817155"/><stop offset=".47" stop-color="#a09170"/><stop offset="1" stop-color="#6f6148"/></linearGradient>
+    <linearGradient id="distant-ink" x2="0" y2="1"><stop stop-color="#393832" stop-opacity=".14"/><stop offset="1" stop-color="#292b28" stop-opacity=".60"/></linearGradient>
+    <filter id="ink-bleed"><feGaussianBlur stdDeviation="2.1"/></filter>
+    <filter id="paper-stain"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+  <rect width="1024" height="540" fill="url(#old-paper)"/>
+  <g fill="#27261f" opacity=".12" filter="url(#paper-stain)">
+    <path d="M-45 25c100 8 159 41 202 97 23 39 8 106-62 130l-140-6zM1090 55c-76 12-116 71-115 132 2 55 45 82 115 106zM-16 480c168-67 261 23 395 17 182-17 302-26 665-1v69H-16z"/>
+  </g>
+  <g fill="url(#distant-ink)" filter="url(#ink-bleed)">
+    <path d="M61 363c36-25 64-47 89-85 35 19 58 25 83 15 26-15 41-43 65-90 39 23 45 71 95 78 44-7 70-40 103-71 38 11 55 60 91 78 28-2 63-36 93-64 39 25 54 83 112 98 37-5 64-21 91-41l90 90v71H61z"/>
+    <path d="M-5 443c112-71 187-58 253-26 65 25 117 11 175-24 63-29 119-14 187 14 76 19 118-29 185-27 86-1 153 43 234 83v75H-5z" opacity=".45"/>
+  </g>
+  <g fill="none" stroke="#302e27" stroke-linecap="round" stroke-linejoin="round" opacity=".54">
+    <path d="M127 345c45-9 55-58 93-54m55 60c32-28 51-87 72-100m128 66c29-24 55-67 82-75m43 67c22-16 45-35 64-29m74 63c42-35 74-48 94-72" stroke-width="6"/>
+    <path d="M51 413c100-43 177-29 260-8 74 8 117-21 195-41 85-9 119 31 191 13 99-33 169-21 280 18M-12 460c138-19 214 22 351 6 109-18 175-35 262-26 94 24 148 17 234-2 77-6 155 16 215 27" stroke-width="5"/>
+    <path d="M334 294l34-74 20 44m117 12l34-53 18 23m190 91l35-57 18 35" stroke-width="2.5" opacity=".55"/>
+  </g>
+  <g fill="#292a25" stroke="#292a25" opacity=".68">
+    <path d="M160 436q2-83 18-137m-35 64q31-34 62-40m-51 10q34-34 53-39m-32 69q31-26 65-28m620 115q-10-100-25-151m-35 73q42-45 77-43m-48 6q34-34 59-29m-54 67q35-18 66-9" fill="none" stroke-width="6"/>
+    <path d="M142 363q43-68 88-66-36 35-88 66m17-42q35-50 73-42-35 30-73 42m10 60q36-48 77-36-31 35-77 36m631-10q43-59 89-52-31 36-89 52m17-46q36-52 80-41-29 32-80 41m2 69q44-45 82-34-31 30-82 34" stroke="none" opacity=".50"/>
+  </g>
+  <g stroke="#25251e" stroke-width="1.7" opacity=".30" fill="none">
+    <path d="M25 185c126-30 162-14 239-25M354 158c129 15 204-9 281 8m31 94c81 2 151-18 232-9M37 394c95-12 149 3 246 6m327-16c102-14 193-4 266 14"/>
+  </g>
+  <g fill="#322c23" opacity=".42" font-family="serif" font-size="27">
+    <text x="911" y="95">王</text><text x="911" y="133">宅</text><text x="911" y="171">旧</text><text x="911" y="209">藏</text>
+  </g>
+  <rect x="887" y="223" width="31" height="31" fill="#63332a" opacity=".39"/>
+  <g fill="none" stroke="#241f1a" stroke-opacity=".11" stroke-width="5">
+    <path d="M4 15c72-12 105 3 152 11M1014 24c-42 6-76 17-115 38M59 536c122-32 203-11 314-27M721 522c80-14 184-7 296 14"/>
+  </g>
+</svg>

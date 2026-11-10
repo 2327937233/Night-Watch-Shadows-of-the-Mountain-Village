@@ -1,0 +1,166 @@
+[gd_scene load_steps=4 format=3 uid="uid://watchnight_courtyard"]
+
+[ext_resource type="Script" path="res://scripts/courtyard_scene.gd" id="1_scene"]
+[ext_resource type="Script" path="res://scripts/courtyard_depth_motion.gd" id="2_depth"]
+[ext_resource type="Font" path="res://assets/fonts/watchnight_chinese.tres" id="3_font"]
+
+[node name="CourtyardScene" type="Node2D"]
+script = ExtResource("1_scene")
+
+[node name="VisualRoot" type="Control" parent="."]
+texture_filter = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="EntranceLayer" type="TextureRect" parent="VisualRoot"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="DepthLayer" type="TextureRect" parent="VisualRoot"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+modulate = Color(1, 1, 1, 0)
+expand_mode = 1
+stretch_mode = 6
+
+[node name="HallLayer" type="TextureRect" parent="VisualRoot"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+modulate = Color(1, 1, 1, 0)
+expand_mode = 1
+stretch_mode = 6
+
+[node name="DepthMotion" type="Node2D" parent="."]
+script = ExtResource("2_depth")
+
+[node name="CharacterAnchor" type="Node2D" parent="."]
+position = Vector2(960, 756)
+
+[node name="Shadow" type="Polygon2D" parent="CharacterAnchor"]
+z_index = -2
+color = Color(0, 0, 0, 0.48)
+polygon = PackedVector2Array(-74, -8, -48, -20, 0, -26, 48, -20, 74, -8, 48, 4, 0, 10, -48, 4)
+
+[node name="FlashlightOrigin" type="Marker2D" parent="CharacterAnchor"]
+position = Vector2(48, -150)
+rotation = -1.5708
+
+[node name="FlashlightVolume" type="Sprite2D" parent="CharacterAnchor/FlashlightOrigin"]
+scale = Vector2(0.88, 0.44)
+z_index = -1
+modulate = Color(1, 0.93, 0.74, 0.44)
+
+[node name="FlashlightCore" type="Sprite2D" parent="CharacterAnchor/FlashlightOrigin"]
+scale = Vector2(0.8, 0.32)
+modulate = Color(1, 0.92, 0.7, 0.38)
+
+[node name="FlashlightSpill" type="Sprite2D" parent="CharacterAnchor/FlashlightOrigin"]
+position = Vector2(272, 0)
+scale = Vector2(0.92, 0.34)
+z_index = -2
+modulate = Color(1, 0.86, 0.55, 0.46)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterAnchor"]
+position = Vector2(0, -218)
+scale = Vector2(0.46, 0.46)
+
+[node name="RainLayer" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="FogLayer" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Vignette" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ThunderFlash" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0.68, 0.78, 0.94, 0)
+
+[node name="HUDLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="HUDLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Objective" type="Label" parent="HUDLayer/HUD"]
+layout_mode = 0
+offset_left = 1420.0
+offset_top = 74.0
+offset_right = 1840.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.83, 0.75, 0.59, 0.9)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 27
+text = "◇  穿过庭院，前往主屋"
+horizontal_alignment = 2
+
+[node name="DepthLabel" type="Label" parent="HUDLayer/HUD"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 48.0
+offset_right = 340.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0.72, 0.7, 0.65, 0.64)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 21
+text = "庭院深处  00%"
+
+[node name="Prompt" type="Label" parent="HUDLayer/HUD"]
+visible = false
+layout_mode = 0
+offset_left = 760.0
+offset_top = 824.0
+offset_right = 1160.0
+offset_bottom = 884.0
+theme_override_colors/font_color = Color(0.91, 0.84, 0.69, 0.95)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 27
+text = "[ E ]  使用钥匙推开主屋大门"
+horizontal_alignment = 1
+
+[node name="AudioBgm" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+
+[node name="AudioThunder" type="AudioStreamPlayer" parent="."]
+volume_db = -7.0
+
+[node name="ThunderTimer" type="Timer" parent="."]
+one_shot = true

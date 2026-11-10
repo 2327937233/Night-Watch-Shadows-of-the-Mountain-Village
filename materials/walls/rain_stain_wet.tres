@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "rain_stain_wet"
+albedo_color = Color(0.035, 0.038, 0.035, 1)
+metallic = 0.0
+roughness = 0.66
+transparency = 0
+cull_mode = 0

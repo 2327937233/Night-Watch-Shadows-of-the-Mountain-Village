@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <path d="M26 18h70c7 0 11 4 11 11v79c0 4-3 7-7 7H30c-6 0-9-4-9-10V25c0-4 2-7 5-7z" fill="#263039" stroke="#a77b3e" stroke-width="4"/>
+  <path d="M34 19v95M92 19v95" stroke="#71512e" stroke-width="3" opacity=".8"/>
+  <path d="M42 28h41v72H42z" fill="#b99757" opacity=".82"/>
+  <text x="62" y="45" fill="#382415" font-size="16" text-anchor="middle" font-family="serif">王</text>
+  <text x="62" y="64" fill="#382415" font-size="16" text-anchor="middle" font-family="serif">氏</text>
+  <text x="62" y="83" fill="#382415" font-size="16" text-anchor="middle" font-family="serif">家</text>
+  <text x="62" y="101" fill="#382415" font-size="16" text-anchor="middle" font-family="serif">谱</text>
+  <circle cx="29" cy="30" r="2" fill="#c5974e"/><circle cx="29" cy="102" r="2" fill="#c5974e"/>
+</svg>

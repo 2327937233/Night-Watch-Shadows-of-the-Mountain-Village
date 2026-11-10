@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "courtyard_wall_plaster_wet"
+albedo_color = Color(0.24, 0.225, 0.2, 1)
+metallic = 0.0
+roughness = 0.82
+transparency = 0
+cull_mode = 0

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "left_boundary_water_stain_final"
+albedo_color = Color(0.055, 0.065, 0.062, 1)
+metallic = 0.0
+roughness = 0.44
+cull_mode = 0
+transparency = 0

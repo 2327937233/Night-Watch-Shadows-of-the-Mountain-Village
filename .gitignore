@@ -1,0 +1,29 @@
+# Local editor caches, test data, and exports
+/.godot/
+/.godot_user/
+/.agents/
+/.codex/
+/.aws/
+/tmp/
+/dist/
+/export_templates/
+/export_credentials.cfg
+
+# Local copies of source recordings and their derived clips
+/assets/audio/footsteps_high_heels_concrete_first15_trimmed.wav*
+/assets/audio/footsteps_source_156_163.*
+/assets/audio/woman_crying_BV17E411j7N4*
+/assets/audio/door_push_authorized_source.*
+/assets/audio/door_push_old_wood.wav*
+/assets/audio/door_push.ogg*
+/assets/audio/door_cry/hinge_*.wav*
+/assets/audio/door_cry/door_seat.wav*
+/assets/audio/door_cry/sob_*.wav*
+/assets/audio/hanging_truth/beam_sob.wav*
+/assets/fonts/chinese_horror_font.ttf*
+/thunderstorm_2min_loop.mp3*
+
+# OS / script scratch files
+Thumbs.db
+.DS_Store
+__pycache__/

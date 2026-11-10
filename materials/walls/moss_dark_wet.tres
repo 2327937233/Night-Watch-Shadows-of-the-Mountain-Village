@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "moss_dark_wet"
+albedo_color = Color(0.055, 0.09, 0.055, 1)
+metallic = 0.0
+roughness = 0.72
+transparency = 0
+cull_mode = 0
